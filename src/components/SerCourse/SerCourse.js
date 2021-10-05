@@ -1,5 +1,8 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+
+// main data show
+
 const SerCourse = (props) => {
     const {cname, price, img} = props.course;
     return (

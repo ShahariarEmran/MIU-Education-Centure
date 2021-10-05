@@ -1,24 +1,27 @@
 import React from 'react';
 import './Header.css'
 import Mlogo from '../images/Mlogo.png'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { Nav } from 'react-bootstrap';
 
 
 const Header = () => {
     return (
-        <div className="header">
+                    //    This is nav-bar
+                    
+        <Nav className="header">
             <img className="mlogo" src={Mlogo} alt="" /> 
             <div>
             <h1 className="header-text">MIU Education Centure</h1>
             <div className="header-link">
-                <Link className="home-link" to="/home">Home</Link>
-                <Link className="home-link" to="/services">Services</Link>
-                <Link className="home-link" to="/departments">Departments</Link>
-                <Link className="home-link" to="/about">About</Link>
+                <NavLink className="home-link" to="/home">Home</NavLink>
+                <NavLink className="home-link" to="/services">Services</NavLink>
+                <NavLink className="home-link" to="/departments">Departments</NavLink>
+                <NavLink className="home-link" to="/about">About</NavLink>
             </div>
             </div>
             
-        </div>
+        </Nav>
     );
 };
 

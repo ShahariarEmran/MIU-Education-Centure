@@ -17,7 +17,7 @@ const Departments = () => {
             <h1>Our Department</h1>
             <Row xs={1} md={2} className="g-4">
             {
-               course.map(nws => <AllCourse course={nws}></AllCourse>)
+               course.map(nws => <AllCourse key={nws.key} course={nws}></AllCourse>)
             }
             </Row>
            </div>

@@ -19,7 +19,7 @@ const Home = () => {
             <h1>Our Crash Course</h1>
             <Row xs={1} md={2} className="g-4">
             {
-               course.map(nws => <SerCourse course={nws}></SerCourse>)
+               course.map(nws => <SerCourse key={nws.key} course={nws}></SerCourse>)
             }
             </Row>
         </div>
