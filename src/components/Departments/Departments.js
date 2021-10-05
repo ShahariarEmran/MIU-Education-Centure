@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Row } from 'react-bootstrap';
-import SerCourse from '../SerCourse/SerCourse';
+import AllCourse from '../AllCourse/AllCourse';
 
 const Departments = () => {
     const [course, setCourse] = useState([]);
@@ -17,7 +17,7 @@ const Departments = () => {
             <h1>Our Department</h1>
             <Row xs={1} md={2} className="g-4">
             {
-               course.map(nws => <SerCourse course={nws}></SerCourse>)
+               course.map(nws => <AllCourse course={nws}></AllCourse>)
             }
             </Row>
            </div>
